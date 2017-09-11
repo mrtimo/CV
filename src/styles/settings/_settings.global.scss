@@ -1,0 +1,35 @@
+/* ==========================================================================
+   #SETTINGS: GLOBAL
+   ========================================================================== */
+
+// Responsive breakpoints
+$phablet-width: 670px  !default;
+$tablet-width:  768px  !default;
+$desktop-width: 1025px !default;
+
+// Colour palette
+$colour-one: 	 #FFFFFF !default; // OFF WHITE
+$colour-two:   #191919 !default; // DARK GREY
+$colour-three: #545454 !default; // LIGHT GREY
+$colour-four:  #0074D9 !default; // BLUE
+
+// High-level base settings
+$base-font-size:    16px !default;
+$base-line-height:  24px !default;
+$base-text-colour:  $colour-two;
+
+/**
+ * These are framework variables.
+ * You can use them throughout the project,
+ * but do not modify or reassign them
+ */
+ $base-spacing-unit:       $base-line-height;
+ $base-spacing-unit-tiny:  round($base-spacing-unit / 4);
+ $base-spacing-unit-small: round($base-spacing-unit / 2);
+ $base-spacing-unit-large: round($base-spacing-unit * 2);
+ $base-spacing-unit-huge:  round($base-spacing-unit * 4);
+
+// Z-indexes
+$z-index-beneath: -1;
+$z-index-base:     1;
+
