@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #TAB
+   ========================================================================== */
+
+@import "../../styles/settings/settings.global";
+@import "../../styles/tools/tools.functions";
+
+// Ensure these settings are configured before the @import of this file.
+$tab-height: 120px !default;
+
+.tab {
+  background: $global-gradient;
+  color: $colour-one;
+  display: inline-flex;
+  font-weight: 700;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: $tab-height;
+  line-height: 1;
+  padding: rem-calc($base-spacing-unit-tiny);
+}

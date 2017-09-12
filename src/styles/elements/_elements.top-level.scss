@@ -6,14 +6,26 @@ html {
 	font-size: $base-font-size;
 }
 
+// 1. Use psuedo-element to create faux border-top
 body {
 	background-color: $colour-one;
 	color: $base-text-colour;
-	font-family: $font-primary;
+	font: {
+		family: $font-primary;
+		weight: 300;
+	}
 	letter-spacing: 0.025em;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	@include font-size($base-font-size);
+
+	/* [1] */
+	&:before {
+		background: $global-gradient;
+		content: '';
+		display: block;
+		height: 6px;
+	}
 }
 

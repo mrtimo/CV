@@ -5,6 +5,10 @@
 // Typography - system font stack
 $font-primary: BlinkMacSystemFont, -apple-system, "Segoe UI", Roboto, Helvetica, sans-serif;
 
+// Responsive typography parameters (used in 'fluid-type' mixin)
+$min-vw: 320px !default;
+$max-vw: 1024px !default;
+
 // Typography sizing - major third typographic scale
 $font-size-1: 39px !default;
 $font-size-2: 31px !default;

@@ -6,7 +6,7 @@
 @import "../../../styles/tools/tools.functions";
 
 // Ensure these settings are configured before the @import of this file.
-$wrapper-max-width: 800px;
+$wrapper-max-width: 800px !default;
 
 .wrapper {
   display: block;

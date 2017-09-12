@@ -1,0 +1,53 @@
+/* ==========================================================================
+   #SectionTitle
+   ========================================================================== */
+
+@import "../../styles/settings/settings.global";
+@import "../../styles/tools/tools.functions";
+
+// Ensure these settings are configured before the @import of this file.
+$number-dimension: 60px !default;
+
+.title {
+  align-items: flex-end;
+  display: flex;
+}
+
+.number {
+  background: $global-gradient;
+  color: $colour-one;
+  display: inline-flex;
+  flex-direction: column;
+  font-weight: 800;
+  justify-content: flex-end;
+  height: $number-dimension;
+  line-height: 1.15;
+  margin-right: rem-calc($base-spacing-unit-small);
+  padding: rem-calc($base-spacing-unit-tiny);
+  position: relative;
+  text-align: right;
+  width: $number-dimension;
+}
+
+/**
+ * 1. Increase letter spacing to improve legibility of uppercase text
+ * 2. Use pseudo-element over 'text-decorartion: underline' to better
+ *    control positioning and appearance
+ */
+.text {
+  display: inline-block;
+  letter-spacing: 0.05em; /* [1] */
+  line-height: 1;
+  margin-bottom: 0;
+  text-transform: uppercase;
+
+  /* [2] */
+  &:after {
+    background-color: currentColor;
+    content: '';
+    display: block;
+    height: 3px;
+    margin-top: rem-calc(4px);
+    width: 100%;
+  }
+}

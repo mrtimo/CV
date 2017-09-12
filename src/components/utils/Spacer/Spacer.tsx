@@ -1,7 +1,15 @@
 import * as React from 'react';
-import { SpacerProps, classMap } from './types';
 
 const styles = require('./Spacer.module.scss');
+
+interface SpacerProps {
+  children?: any;
+  size?: string;
+}
+
+interface classMap {
+  [key: string]: string;
+}
 
 const classMap: classMap = {
   tiny: 'spacerTiny',

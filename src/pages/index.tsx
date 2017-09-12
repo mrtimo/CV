@@ -1,6 +1,13 @@
 import * as React from 'react';
-import Wrapper from '../components/layout/Wrapper/Wrapper';
-import Spacer from '../components/layout/Spacer/Spacer';
+
+// import layout components
+import Wrapper from '../components/utils/Wrapper/Wrapper';
+import Spacer from '../components/utils/Spacer/Spacer';
+
+// import UI components
+import Tab from '../components/Tab/Tab';
+import Profile from '../components/Profile/Profile';
+import SectionTitle from '../components/SectionTitle/SectionTitle';
 
 /**
  * Import global styles:
@@ -11,10 +18,19 @@ require('../styles/global.scss');
 
 const IndexPage = () => (
   <Wrapper>
+    <Spacer size="large">
+      <Tab />
+    </Spacer>
+
     <Spacer size="huge">
-      <h1>Test index page</h1>
-      <p>Welcome to your new Gatsby site.</p>
-      <p>Now go build something great.</p>
+      <Profile>
+        Digital Product Designer. Fluent in HTML, CSS &amp; JS. Building Digital
+        products for founders and startup teams.
+      </Profile>
+    </Spacer>
+
+    <Spacer>
+      <SectionTitle number={1}>Experience</SectionTitle>
     </Spacer>
   </Wrapper>
 );
