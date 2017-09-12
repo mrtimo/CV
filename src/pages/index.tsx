@@ -1,6 +1,7 @@
 import * as React from 'react';
 
 // import layout components
+import Grid from '../components/utils/Grid/Grid';
 import Wrapper from '../components/utils/Wrapper/Wrapper';
 import Spacer from '../components/utils/Spacer/Spacer';
 
@@ -18,15 +19,32 @@ require('../styles/global.scss');
 
 const IndexPage = () => (
   <Wrapper>
-    <Spacer size="large">
+    <Spacer size="huge">
       <Tab />
     </Spacer>
 
-    <Spacer size="huge">
+    <Spacer size="large">
       <Profile>
         Digital Product Designer. Fluent in HTML, CSS &amp; JS. Building Digital
         products for founders and startup teams.
       </Profile>
+    </Spacer>
+
+    <Spacer size="huge">
+      <Grid columnCount={2} breakpoint="medium">
+        <div>
+          Ei per eius integre, mei putent facilis noluisse et. Soleat cotidieque
+          no his. Mei sumo voluptua definiebas id, no iudico pertinacia vim. Ei
+          per eius integre, mei putent facilis noluisse et. Soleat cotidieque no
+          his. Mei sumo voluptua definiebas id, no iudico pertinacia vim.
+        </div>
+        <div>
+          Ei per eius integre, mei putent facilis noluisse et. Soleat cotidieque
+          no his. Mei sumo voluptua definiebas id, no iudico pertinacia vim. Ei
+          per eius integre, mei putent facilis noluisse et. Soleat cotidieque no
+          his. Mei sumo voluptua definiebas id, no iudico pertinacia vim.
+        </div>
+      </Grid>
     </Spacer>
 
     <Spacer>

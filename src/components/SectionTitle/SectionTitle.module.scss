@@ -14,7 +14,7 @@ $number-dimension: 60px !default;
 }
 
 .number {
-  background: $global-gradient;
+  background-color: $colour-four;
   color: $colour-one;
   display: inline-flex;
   flex-direction: column;

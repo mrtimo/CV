@@ -1,5 +1,5 @@
 /* ==========================================================================
-   #TAB
+   #Tab
    ========================================================================== */
 
 @import "../../styles/settings/settings.global";
@@ -9,7 +9,7 @@
 $tab-height: 120px !default;
 
 .tab {
-  background: $global-gradient;
+  background-color: $colour-four;
   color: $colour-one;
   display: inline-flex;
   font-weight: 700;
@@ -17,5 +17,6 @@ $tab-height: 120px !default;
   justify-content: flex-end;
   height: $tab-height;
   line-height: 1;
+  margin-bottom: 0;
   padding: rem-calc($base-spacing-unit-tiny);
 }

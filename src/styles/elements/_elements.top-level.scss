@@ -10,10 +10,7 @@ html {
 body {
 	background-color: $colour-one;
 	color: $base-text-colour;
-	font: {
-		family: $font-primary;
-		weight: 300;
-	}
+	font-family: $font-primary;
 	letter-spacing: 0.025em;
 	overflow-x: hidden;
 	-webkit-font-smoothing: antialiased;
@@ -22,7 +19,7 @@ body {
 
 	/* [1] */
 	&:before {
-		background: $global-gradient;
+		background-color: $colour-four;
 		content: '';
 		display: block;
 		height: 6px;

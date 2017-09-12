@@ -19,9 +19,7 @@ const classMap: classMap = {
 };
 
 const Spacer = ({ children, size = null }: SpacerProps) => (
-  <div className={size ? styles[classMap[size]] : styles.spacer}>
-    {children}
-  </div>
+  <div className={styles[classMap[size]] || styles.spacer}>{children}</div>
 );
 
 export default Spacer;

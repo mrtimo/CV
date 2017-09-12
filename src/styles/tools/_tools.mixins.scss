@@ -186,3 +186,12 @@
   top: 0;
   width: 100%;
 }
+
+@mixin gridWithFallback {
+  display: flex;
+  flex-wrap: wrap;
+
+  @supports (display: grid) {
+    display: grid;
+  }
+}
