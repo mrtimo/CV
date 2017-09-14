@@ -2,15 +2,13 @@ import * as React from 'react';
 
 const styles = require('./Description.module.scss');
 
-interface ContentItems {
-  title: string;
-  date: string;
-  emphasisText: string;
-  text?: string;
-}
-
 interface DescriptionProps {
-  content: ContentItems;
+  content: {
+    title: string;
+    date: string;
+    emphasisText: string;
+    text?: string;
+  };
 }
 
 const Description = ({ content }: DescriptionProps) => (
@@ -21,13 +19,10 @@ const Description = ({ content }: DescriptionProps) => (
     </div>
 
     <p>
-      <strong className={styles.emphasis}>
-        {content.emphasisText} {content.text && '\u2014'}
-      </strong>{' '}
+      <strong className={styles.emphasis}>{content.emphasisText}</strong>.{' '}
       {content.text}
     </p>
   </div>
 );
 
 export default Description;
-

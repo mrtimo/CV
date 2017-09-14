@@ -18,7 +18,7 @@ const classMap: classMap = {
   huge: 'spacerHuge'
 };
 
-const Spacer = ({ children, size = null }: SpacerProps) => (
+const Spacer = ({ children, size }: SpacerProps) => (
   <div className={styles[classMap[size]] || styles.spacer}>{children}</div>
 );
 

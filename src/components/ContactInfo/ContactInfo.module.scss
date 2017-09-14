@@ -1,0 +1,15 @@
+/* ==========================================================================
+   #ContactInfo
+   ========================================================================== */
+
+@import "../../styles/settings/settings.global";
+@import "../../styles/tools/tools.functions";
+
+.list {
+  display: flex;
+}
+
+.label {
+  margin-right: rem-calc($base-spacing-unit-tiny);
+  text-transform: capitalize;
+}

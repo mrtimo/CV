@@ -8,6 +8,7 @@ import Spacer from '../components/utils/Spacer/Spacer';
 // import UI components
 import Tab from '../components/Tab/Tab';
 import Profile from '../components/Profile/Profile';
+import ContactInfo from '../components/ContactInfo/ContactInfo';
 import SectionTitle from '../components/SectionTitle/SectionTitle';
 import Description from '../components/Description/Description';
 
@@ -24,11 +25,53 @@ const IndexPage = () => (
       <Tab />
     </Spacer>
 
-    <Spacer size="large">
+    <Spacer size="huge">
       <Profile>
-        Digital Product Designer. Fluent in HTML, CSS &amp; JS. Building Digital
-        products for founders and startup teams.
+        I'm Reece Lucas. Front End Developer at Deloitte Digital. Fluent in the
+        modern web stack. A sucker for scalable CSS architecture, performance
+        optimisation and accessibility.
       </Profile>
+    </Spacer>
+
+    <Spacer size="huge">
+      <ContactInfo
+        items={[
+          {
+            label: 'Tel',
+            text: '07445575975',
+            link: {
+              href: 'tel:07445575975',
+              title: 'Call me on 07445575975'
+            }
+          },
+          {
+            label: 'Email',
+            text: 'reecelucas@sky.com',
+            link: {
+              href: 'mailto:reecelucas@sky.com',
+              title: 'Email me at reecelucas@sky.com'
+            }
+          },
+          {
+            label: 'LinkedIn',
+            text: 'reecelucas',
+            link: {
+              href: 'https://www.linkedin.com/in/reecelucas/',
+              title: 'Visit my LinkedIn Profile',
+              newTab: true
+            }
+          },
+          {
+            label: 'GitHub',
+            text: 'reecelucas',
+            link: {
+              href: 'https://github.com/reecelucas',
+              title: 'Visit my GitHub Profile',
+              newTab: true
+            }
+          }
+        ]}
+      />
     </Spacer>
 
     <Spacer size="huge">
@@ -84,6 +127,7 @@ const IndexPage = () => (
               centuries.
             </p>
           </Spacer>
+
           <Spacer size="large">
             <SectionTitle number={3}>Education</SectionTitle>
           </Spacer>
