@@ -2,6 +2,9 @@
    #Profile
    ========================================================================== */
 
+@import "../../styles/settings/settings.global";
+
 .profile {
+  color: $colour-two;
   font-weight: 300;
 }

@@ -8,7 +8,7 @@
 
 // Ensure these settings are configured before the @import of this file.
 $grid-column-number: 12 !default;
-$grid-column-gap: 20px !default;
+$grid-column-gap: 80px !default;
 
 .grid {
   margin-left: -(rem-calc($grid-column-gap));

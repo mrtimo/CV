@@ -6,11 +6,13 @@
 @import "../../styles/tools/tools.functions";
 
 // Ensure these settings are configured before the @import of this file.
-$number-dimension: 60px !default;
+$number-dimension: 50px !default;
 
 .title {
   align-items: flex-end;
+  color: $colour-two;
   display: flex;
+  margin-bottom: 0;
 }
 
 .number {
@@ -21,7 +23,7 @@ $number-dimension: 60px !default;
   font-weight: 800;
   justify-content: flex-end;
   height: $number-dimension;
-  line-height: 1.15;
+  line-height: 1.2;
   margin-right: rem-calc($base-spacing-unit-small);
   padding: rem-calc($base-spacing-unit-tiny);
   position: relative;

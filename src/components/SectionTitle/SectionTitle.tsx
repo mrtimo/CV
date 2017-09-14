@@ -8,14 +8,14 @@ interface SectionTitleProps {
 }
 
 const SectionTitle = ({ children, number }: SectionTitleProps) => (
-  <h3 className={styles.title}>
+  <h4 className={styles.title}>
     {number && (
       <span className={styles.number} aria-hidden="true">
         {number < 10 ? `0${number}.` : `${number}.`}
       </span>
     )}
     <span className={styles.text}>{children}</span>
-  </h3>
+  </h4>
 );
 
 export default SectionTitle;

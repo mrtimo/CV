@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #Description
+   ========================================================================== */
+
+@import "../../styles/settings/settings.global";
+
+.title {
+  color: $colour-two;
+  line-height: 1.4;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+.date {
+  color: $colour-three;
+  display: block;
+  font-style: italic;
+  line-height: 1.8;
+}
+
+.emphasis {
+  color: $colour-four;
+  font-weight: 700;
+}
