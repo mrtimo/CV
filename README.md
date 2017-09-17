@@ -1,13 +1,3 @@
-# gatsby-starter-default
-The default Gatsby starter
+# Reece Lucas's CV
+This is my online CV. It's built using [Gatsby](https://github.com/gatsbyjs/gatsby) with [Typescript](https://github.com/Microsoft/TypeScript) and [CSS Modules](https://github.com/css-modules/css-modules). You can find it here: [https://reecelucas-cv.netlify.com](https://reecelucas-cv.netlify.com)
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/)
-
-Install this starter (assuming Gatsby is installed) by running from your CLI:
-```
-gatsby new gatsby-example-site
-```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)

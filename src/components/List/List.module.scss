@@ -1,0 +1,21 @@
+/* ==========================================================================
+   #List
+   ========================================================================== */
+
+@import "../../styles/settings/settings.global";
+@import "../../styles/tools/tools.functions";
+
+.listItem {
+  align-items: center;
+  display: flex;
+  line-height: 1.2;
+  margin-bottom: rem-calc($base-spacing-unit-tiny);
+
+  &:before {
+    content: url(./list-icon.svg);
+    height: 1.5em;
+    line-height: 1;
+    margin-right: rem-calc($base-spacing-unit-tiny);
+    width: 1.5em;
+  }
+}

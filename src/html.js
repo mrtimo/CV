@@ -1,7 +1,11 @@
-import React from 'react';
+/* eslint-disable */
 
+import React, { Component } from 'react';
+
+const productionEnv = process.env.NODE_ENV === 'production';
 let stylesStr;
-if (process.env.NODE_ENV === `production`) {
+
+if (productionEnv) {
   try {
     stylesStr = require(`!raw-loader!../public/styles.css`);
   } catch (e) {
@@ -9,10 +13,10 @@ if (process.env.NODE_ENV === `production`) {
   }
 }
 
-module.exports = class HTML extends React.Component {
+class HTML extends Component {
   render() {
     let css;
-    if (process.env.NODE_ENV === 'production') {
+    if (productionEnv) {
       css = (
         <style
           id="gatsby-inlined-css"
@@ -20,15 +24,13 @@ module.exports = class HTML extends React.Component {
         />
       );
     }
+
     return (
-      <html>
+      <html lang="en-GB">
         <head>
           <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
-          <meta
-            name="viewport"
-            content="width=device-width, initial-scale=1, shrink-to-fit=no"
-          />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
           {this.props.headComponents}
           {css}
         </head>
@@ -44,4 +46,7 @@ module.exports = class HTML extends React.Component {
       </html>
     );
   }
-};
+}
+
+export default HTML;
+

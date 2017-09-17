@@ -19,8 +19,8 @@ interface ContactInfoProps {
 
 const ContactInfo = ({ items }: ContactInfoProps) => (
   <div>
-    {items.map(({ label, text, link }) => (
-      <dl className={styles.list}>
+    {items.map(({ label, text, link }, i) => (
+      <dl key={i} className={styles.list}>
         <dt className={styles.label}>{label}:</dt>
         <dd>
           <Link

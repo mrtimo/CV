@@ -1,0 +1,24 @@
+/* ==========================================================================
+   #IconList
+   ========================================================================== */
+
+@import "../../styles/settings/settings.global";
+@import "../../styles/tools/tools.functions";
+
+.listItem {
+  display: inline-block;
+  vertical-align: middle;
+
+  &:not(:last-child) {
+    margin-right: rem-calc($base-spacing-unit-small);
+  }
+}
+
+.listLink {
+  display: block;
+
+  svg {
+    display: block;
+    fill: currentColor;
+  }
+}

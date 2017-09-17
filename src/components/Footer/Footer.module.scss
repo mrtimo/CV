@@ -1,12 +1,12 @@
 /* ==========================================================================
-   #Link
+   #Footer
    ========================================================================== */
 
 @import "../../styles/settings/settings.global";
+@import "../../styles/tools/tools.functions";
 
-.link {
-  color: $colour-four;
-  display: inline-block;
-  font-weight: 600;
-  text-decoration: underline;
+.footer {
+  border-top: 1px solid lighten($colour-three, 50%);
+  padding: rem-calc($base-spacing-unit) 0;
+  text-align: center;
 }

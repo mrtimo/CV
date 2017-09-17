@@ -4,16 +4,26 @@ const styles = require('./Link.module.scss');
 
 interface LinkProps {
   href: string;
-  title: string;
+  title?: string;
+  ariaLabel?: string;
+  customClass?: string;
   children: any;
   newTab?: boolean;
 }
 
-const Link = ({ href, newTab, title, children }: LinkProps) => (
+const Link = ({
+  href,
+  newTab,
+  title,
+  ariaLabel,
+  customClass,
+  children
+}: LinkProps) => (
   <a
-    className={styles.link}
+    className={customClass || styles.link}
     href={href}
-    title={title}
+    title={title || null}
+    aria-label={ariaLabel || null}
     target={newTab ? '_blank' : null}
     // https://www.jitbit.com/alexblog/256-targetblank---the-most-underestimated-vulnerability-ever/
     rel={newTab ? 'noopener noreferrer' : null}
