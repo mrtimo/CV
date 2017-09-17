@@ -3,8 +3,12 @@
    ========================================================================== */
 
 @import "../../styles/settings/settings.global";
+@import "../../styles/settings/settings.typography";
+@import "../../styles/tools/tools.functions";
+@import "../../styles/tools/tools.mixins";
 
 .profile {
   color: $colour-two;
   font-weight: 300;
+  @include fluid-type($min-vw, $max-vw, $font-size-4, $font-size-3);
 }

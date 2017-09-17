@@ -13,13 +13,6 @@ import SectionTitle from '../components/SectionTitle/SectionTitle';
 import Description from '../components/Description/Description';
 import List from '../components/List/List';
 
-/**
- * Import global styles:
- * Typescript treats imports differently, and importing CSS modules
- * like we do in JS results in a 'Cannot find module' error.
- */
-require('../styles/global.scss');
-
 const IndexPage = () => (
   <div>
     <Spacer size="huge">
@@ -30,9 +23,9 @@ const IndexPage = () => (
 
         <Spacer size="huge">
           <Profile>
-            I'm Reece Lucas. Front End Developer at Deloitte Digital. Fluent in
-            the modern web stack. A sucker for scalable CSS architecture,
-            performance optimisation and accessibility.
+            I'm Reece Lucas, Consultant Developer at Deloitte Digital. I'm fluent in the modern web
+            stack and I'm always happy to play around with new languages and technologies. My particular areas of
+            interest centre around scalable CSS architecture, performance optimisation and accessibility.
           </Profile>
         </Spacer>
 
