@@ -56,7 +56,7 @@ const TemplateWrapper = ({ children }: TemplateWrapperProps) => (
           href: '/favicons/favicon-16x16.png',
           sizes: '16x16'
         },
-        { rel: 'manifest', href: '/favicons/manifest.json' },
+        { rel: 'manifest', href: '/manifest.json' },
         {
           rel: 'mask-icon',
           href: '/favicons/safari-pinned-tab.svg',
@@ -65,8 +65,7 @@ const TemplateWrapper = ({ children }: TemplateWrapperProps) => (
         { rel: 'shortcut icon', href: '/favicons/favicon.ico' }
       ]}
     />
-
-    <div>{children()}</div>
+    {children()}
     <Footer />
   </div>
 );

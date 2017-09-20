@@ -23,9 +23,11 @@ const IndexPage = () => (
 
         <Spacer size="huge">
           <Profile>
-            I'm Reece Lucas, Consultant Developer at Deloitte Digital. I'm fluent in the modern web
-            stack and I'm always happy to play around with new languages and technologies. My particular areas of
-            interest centre around scalable CSS architecture, performance optimisation and accessibility.
+            I'm Reece Lucas, Consultant Developer at Deloitte Digital. I'm
+            fluent in the modern web stack and I'm always happy to play around
+            with new languages and technologies. My particular areas of interest
+            centre around scalable CSS architecture, performance optimisation
+            and accessibility.
           </Profile>
         </Spacer>
 
