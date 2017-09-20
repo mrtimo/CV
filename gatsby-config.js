@@ -10,6 +10,7 @@ module.exports = {
       options: {
         name: 'Reece Lucas CV',
         short_name: 'R Lucas CV',
+        start_url: '/',
         icons: [
           {
             src: '/favicons/android-chrome-192x192.png',
