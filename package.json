@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "reece-lucas-cv",
+  "description": "Reece Lucas – CV",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Reece Lucas <reecelucas@sky.com>",
   "dependencies": {
     "@types/node": "^8.0.28",
     "@types/react": "^16.0.5",
