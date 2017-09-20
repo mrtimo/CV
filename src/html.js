@@ -34,7 +34,7 @@ class HTML extends Component {
             name="description"
             content="Reece Lucas CV – Front End Developer based in London"
           />
-          <link rel="canonical" href="https://www.cv.reecelucas.com/" />
+          <link rel="canonical" href="https://cv.reecelucas.com/" />
           <link
             rel="apple-touch-icon"
             sizes="180x180"
@@ -71,7 +71,7 @@ class HTML extends Component {
             property="og:description"
             content="Reece Lucas CV – Front End Developer based in London"
           />
-          <meta property="og:url" content="https://www.cv.reecelucas.com" />
+          <meta property="og:url" content="https://cv.reecelucas.com" />
           <meta name="twitter:card" content="summary" />
           <meta name="og:site_name" content="Reece Lucas | CV" />
 
