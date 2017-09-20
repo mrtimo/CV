@@ -23,7 +23,7 @@ class HTML extends Component {
     return (
       <html lang="en-GB">
         <head>
-          <meta charset="utf-8" />
+          <meta charSet="utf-8" />
           <meta httpEquiv="x-ua-compatible" content="ie=edge" />
           <meta
             name="viewport"
