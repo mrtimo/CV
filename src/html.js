@@ -17,12 +17,7 @@ class HTML extends Component {
   render() {
     let css;
     if (productionEnv) {
-      css = (
-        <style
-          id="gatsby-inlined-css"
-          dangerouslySetInnerHTML={{ __html: stylesStr }}
-        />
-      );
+      css = <style dangerouslySetInnerHTML={{ __html: stylesStr }} />;
     }
 
     return (
@@ -49,4 +44,3 @@ class HTML extends Component {
 }
 
 export default HTML;
-
