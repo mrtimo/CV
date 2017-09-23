@@ -5,7 +5,7 @@ const styles = require('./Description.module.scss');
 interface DescriptionProps {
   content: {
     title: string;
-    date: string;
+    subTitle: string;
     emphasisText: string;
     text?: string;
   };
@@ -15,7 +15,7 @@ const Description = ({ content }: DescriptionProps) => (
   <div>
     <div className={styles.header}>
       <h4 className={styles.title}>{content.title}</h4>
-      <span className={styles.date}>{content.date}</span>
+      <span className={styles.subTitle}>{content.subTitle}</span>
     </div>
 
     <p>

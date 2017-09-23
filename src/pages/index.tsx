@@ -82,7 +82,7 @@ const IndexPage = () => (
                 <Description
                   content={{
                     title: 'Consultant Developer',
-                    date: '06/17 – Present',
+                    subTitle: '06/17 – Present',
                     emphasisText: 'Deloitte Digital',
                     text:
                       'Worked as part of a multi-disciplinary team on a large multi-national E-commerce platform. Oversaw a comprehensive code audit and performance review and presented regularly to stakeholders. Planned a detailed approach for re-factor with a view to addressing issues with scalability, maintainability, accessibility and test coverage.'
@@ -93,7 +93,7 @@ const IndexPage = () => (
                 <Description
                   content={{
                     title: 'Lead Front End Developer',
-                    date: '11/14 – 05/17',
+                    subTitle: '11/14 – 05/17',
                     emphasisText: 'Collective London',
                     text:
                       'Led a small front-end team responsible for the development of builds that ranged from responsive micro-sites to large legacy projects. Utilised modern work-flows including Grunt/Gulp/Wepback, BEM/ITCSS (in SASS and PostCSS), and version control via Git. Worked according to agile methodologies within teams internally and client side. Collaborated with project managers and designers to encourage the adoption of design practices that prioritised performance and accessibility.'
@@ -104,7 +104,7 @@ const IndexPage = () => (
                 <Description
                   content={{
                     title: 'UX Research & Design',
-                    date: '11/13 - 08/14',
+                    subTitle: '11/13 - 08/14',
                     emphasisText: 'Meta',
                     text:
                       'Conducted user research and designed UI changes to address usability ‘pain points’. Created functional prototypes for small-scale A/B testing. Worked in a fast-paced environment in diverse, agile teams. Like all startups, time constraints were tight and responsibilities were varied, requiring a flexible approach and readiness to learn skills outside of the typical remit of a Front End Developer.'
@@ -142,7 +142,7 @@ const IndexPage = () => (
               <Description
                 content={{
                   title: 'Physiological Science – BSc.',
-                  date: 'First Class Honors',
+                  subTitle: 'First Class Honors',
                   emphasisText: 'University of Bristol'
                 }}
               />
