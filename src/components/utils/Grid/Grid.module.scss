@@ -11,8 +11,21 @@ $grid-column-number: 12 !default;
 $grid-gap: 80px !default;
 
 .grid {
-  grid-gap: $grid-gap;
+  margin-left: -(rem-calc($grid-gap));
   @include gridWithFallback;
+
+  .gridItem {
+    padding-left: rem-calc($grid-gap);
+  }
+
+  @supports (display: grid) {
+    grid-gap: $grid-gap;
+    margin-left: 0;
+
+    .gridItem {
+      padding-left: 0;
+    }
+  }
 }
 
 /* Style variants
