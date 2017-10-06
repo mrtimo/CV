@@ -1,26 +1,18 @@
 import * as React from 'react';
+import { AnchorProps } from '../../../types';
 
-const styles = require('./Link.module.scss');
+const styles = require('./Anchor.module.scss');
 
-interface LinkProps {
-  href: string;
-  title?: string;
-  ariaLabel?: string;
-  customClass?: string;
-  children: any;
-  newTab?: boolean;
-}
-
-const Link = ({
+const Anchor = ({
   href,
   newTab,
   title,
   ariaLabel,
   customClass,
   children
-}: LinkProps) => (
+}: AnchorProps) => (
   <a
-    className={customClass || styles.link}
+    className={customClass || styles.anchor}
     href={href}
     title={title || null}
     aria-label={ariaLabel || null}
@@ -32,4 +24,4 @@ const Link = ({
   </a>
 );
 
-export default Link;
+export default Anchor;

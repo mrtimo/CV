@@ -1,11 +1,7 @@
 import * as React from 'react';
+import { SvgIconProps } from '../../../types';
 
-interface IconProps {
-  height?: string;
-  width?: string;
-}
-
-export const LinkedInIcon = ({ height, width }: IconProps) => (
+export const LinkedInIcon = ({ height, width }: SvgIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     viewBox="0 0 16 16"
@@ -23,7 +19,7 @@ export const LinkedInIcon = ({ height, width }: IconProps) => (
   </svg>
 );
 
-export const GitHubIcon = ({ height, width }: IconProps) => (
+export const GitHubIcon = ({ height, width }: SvgIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width || '26px'}
@@ -38,7 +34,7 @@ export const GitHubIcon = ({ height, width }: IconProps) => (
   </svg>
 );
 
-export const EmailIcon = ({ height, width }: IconProps) => (
+export const EmailIcon = ({ height, width }: SvgIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width || '26px'}
@@ -49,7 +45,7 @@ export const EmailIcon = ({ height, width }: IconProps) => (
   </svg>
 );
 
-export const DownloadIcon = ({ height, width }: IconProps) => (
+export const DownloadIcon = ({ height, width }: SvgIconProps) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={width || '26px'}

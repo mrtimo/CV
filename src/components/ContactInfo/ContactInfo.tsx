@@ -1,21 +1,8 @@
 import * as React from 'react';
-import Link from '../Link/Link';
+import Anchor from '../utility/Anchor/Anchor';
+import { ContactInfoProps } from '../../types';
 
 const styles = require('./ContactInfo.module.scss');
-
-interface ContactInfoProps {
-  items: [
-    {
-      label: string;
-      text: string;
-      link: {
-        href: string;
-        title: string;
-        newTab?: boolean;
-      };
-    }
-  ];
-}
 
 const ContactInfo = ({ items }: ContactInfoProps) => (
   <div>
@@ -23,13 +10,13 @@ const ContactInfo = ({ items }: ContactInfoProps) => (
       <dl key={i} className={styles.list}>
         <dt className={styles.label}>{label}:</dt>
         <dd>
-          <Link
+          <Anchor
             href={link.href}
             title={link.title}
             newTab={link.newTab || false}
           >
             {text}
-          </Link>
+          </Anchor>
         </dd>
       </dl>
     ))}

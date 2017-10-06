@@ -1,15 +1,7 @@
 import * as React from 'react';
+import { DescriptionProps } from '../../types';
 
 const styles = require('./Description.module.scss');
-
-interface DescriptionProps {
-  content: {
-    title: string;
-    subTitle: string;
-    emphasisText: string;
-    text?: string;
-  };
-}
 
 const Description = ({ content }: DescriptionProps) => (
   <div>

@@ -1,10 +1,7 @@
 import * as React from 'react';
+import { ProfileProps } from '../../types';
 
 const styles = require('./Profile.module.scss');
-
-interface ProfileProps {
-  children?: string;
-}
 
 const Profile = ({ children }: ProfileProps) => (
   <h2 className={styles.profile}>{children}</h2>

@@ -1,10 +1,7 @@
 import * as React from 'react';
+import { ListProps } from '../../types';
 
 const styles = require('./List.module.scss');
-
-interface ListProps {
-  items: string[];
-}
 
 const List = ({ items }: ListProps) => (
   <ul>
