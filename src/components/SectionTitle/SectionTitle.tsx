@@ -1,11 +1,7 @@
 import * as React from 'react';
+import { SectionTitleProps } from '../../types';
 
 const styles = require('./SectionTitle.module.scss');
-
-interface SectionTitleProps {
-  children?: string;
-  number?: number;
-}
 
 const SectionTitle = ({ children, number }: SectionTitleProps) => (
   <h4 className={styles.title}>

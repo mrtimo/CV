@@ -1,8 +1,8 @@
 import * as React from 'react';
-import Wrapper from '../utils/Wrapper/Wrapper';
-import Spacer from '../utils/Spacer/Spacer';
+import Wrapper from '../utility/Wrapper/Wrapper';
+import Spacer from '../utility/Spacer/Spacer';
 import IconList from '../IconList/IconList';
-import Link from '../Link/Link';
+import Anchor from '../utility/Anchor/Anchor';
 
 const styles = require('./Footer.module.scss');
 
@@ -11,9 +11,9 @@ const Footer = () => (
     <Wrapper>
       <p>
         View the source for this CV at{' '}
-        <Link href="https://github.com/reecelucas/CV" newTab>
+        <Anchor href="https://github.com/reecelucas/CV" newTab>
           https://github.com/reecelucas/CV
-        </Link>
+        </Anchor>
       </p>
       <Spacer size="small">
         <IconList />

@@ -1,11 +1,11 @@
 import * as React from 'react';
 
-// import layout components
-import Grid from '../components/utils/Grid/Grid';
-import Wrapper from '../components/utils/Wrapper/Wrapper';
-import Spacer from '../components/utils/Spacer/Spacer';
+// layout components
+import Grid from '../components/utility/Grid/Grid';
+import Wrapper from '../components/utility/Wrapper/Wrapper';
+import Spacer from '../components/utility/Spacer/Spacer';
 
-// import UI components
+// UI components
 import Tab from '../components/Tab/Tab';
 import Profile from '../components/Profile/Profile';
 import ContactInfo from '../components/ContactInfo/ContactInfo';

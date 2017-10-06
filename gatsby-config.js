@@ -1,6 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: 'Reece Lucas CV',
+    title: 'Reece Lucas | CV',
+    description: 'Reece Lucas CV – Front End Developer based in London',
+    href: 'https://cv.reecelucas.com/',
+    imageUrl: '',
+    imageAlt: '',
+    themeColour: '#426591',
   },
   plugins: [
     'gatsby-plugin-sass',
@@ -29,5 +34,6 @@ module.exports = {
       },
     },
     'gatsby-plugin-offline'
-  ]
+  ],
+  pathPrefix: '/'
 };
